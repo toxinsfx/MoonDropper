@@ -6,16 +6,6 @@ if game.PlaceId ~= 2788229376 then
     return
 end
 
-for _, v in pairs(config.Controllers) do
-    if not tostring(game:GetService("Players").LocalPlayer.UserId) ~= tostring(v) then
-        setfpscap(5)
-        game:GetService("RunService"):Set3dRenderingEnabled(false)
-    else
-        setfpscap(120)
-        game:GetService("RunService"):Set3dRenderingEnabled(true)
-    end
-end
-
 print("Loading Commands...")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/toxinsfx/MoonDropper/main/Commands.lua",true))()
 print("Commands Loaded!")
