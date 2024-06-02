@@ -7,7 +7,7 @@ if game.PlaceId ~= 2788229376 then
 end
 
 for _, v in pairs(config.Controllers) do
-    if tostring(game:GetService("Players").LocalPlayer.UserId) ~= tostring(v) then
+    if not tostring(game:GetService("Players").LocalPlayer.UserId) ~= tostring(v) then
         setfpscap(5)
         game:GetService("RunService"):Set3dRenderingEnabled(false)
     else
