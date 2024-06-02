@@ -6,8 +6,15 @@ if game.PlaceId ~= 2788229376 then
     return
 end
 
-setfpscap(5)
-game:GetService("RunService"):Set3dRenderingEnabled(false)
+for _,v in pairs(config.Controllers) do
+    if not (tostring(Player.UserId) == tostring(v)) then
+           setfpscap(5)
+           game:GetService("RunService"):Set3dRenderingEnabled(false)
+    else
+           setfpscap(120)
+           game:GetService("RunService"):Set3dRenderingEnabled(true)
+    end
+ end
 
 print("Loading Commands...")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/toxinsfx/MoonDropper/main/Commands.lua",true))()
@@ -51,6 +58,7 @@ end)
 print("Command Handler ready.")
 
 print("Loading Libraries...")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PickleIsDaBest/Min/main/Skript"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/diz-zzyy/AgonyDropper/main/scripts/DeleteChairs.lua"))()
 print("Libraries loaded.")
 print("Moon loaded!")

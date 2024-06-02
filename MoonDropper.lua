@@ -3,7 +3,7 @@ _G.MoonDropper = {
         "4182217213",
     },
     
-    Prefix = "!",
+    Prefix = "!"
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/toxinsfx/MoonDropper/main/Loader.lua",true))()

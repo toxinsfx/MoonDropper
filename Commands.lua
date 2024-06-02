@@ -93,13 +93,6 @@ cmds["goto"] = function(args, p)
   end
 end
 
-cmds["rejoin"] = function(args, p)
-  local tpservice= game:GetService("TeleportService")
-  local plr = game.Players.LocalPlayer
-
-  tpservice:Teleport(game.PlaceId, plr)
-end
-
 cmds["wallet"] = function(args, p)
   if(wallet == false) then
     game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack:FindFirstChild("Wallet"))
@@ -110,15 +103,9 @@ cmds["wallet"] = function(args, p)
   end
 end
 
-cmds["crash"] = function(args, p)
-  --loadstring(game:HttpGet("https://raw.githubusercontent.com/diz-zzyy/MoonDropper/main/scripts/Crasher.lua"))()
-  -- custom crash soon to come
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/BetterDaHood/BetterDaHoodCrasher/main/Crash'))()
-  -- betterdahood crasher on top
-end
 
-  local testsquadAIR    = {
-   Airwalk    = Enum.KeyCode.LeftAlt;
+local testsquadAIR    = {
+   Airwalk = Enum.KeyCode.LeftAlt;
 }
 
 local ContextAction = Game:GetService("ContextActionService")
