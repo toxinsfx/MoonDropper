@@ -10,7 +10,7 @@ setfpscap(5)
 game:GetService("RunService"):Set3dRenderingEnabled(false)
 
 print("Loading Commands...")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/diz-zzyy/AgonyDropper/main/Commands.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/toxinsfx/MoonDropper/main/Commands.lua",true))()
 print("Commands Loaded!")
 
 local VirtualUser = game:GetService("VirtualUser")
