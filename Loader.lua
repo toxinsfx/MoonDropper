@@ -51,7 +51,6 @@ end)
 print("Command Handler ready.")
 
 print("Loading Libraries...")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PickleIsDaBest/Min/main/Skript"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/diz-zzyy/AgonyDropper/main/scripts/DeleteChairs.lua"))()
 print("Libraries loaded.")
 print("Moon loaded!")
