@@ -5,3 +5,5 @@ _G.MoonDropper = {
     
     Prefix = "!",
 }
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/toxinsfx/MoonDropper/main/Loader.lua",true))()
