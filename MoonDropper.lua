@@ -1,6 +1,7 @@
 _G.MoonDropper = {
     Controllers = {
         "3090487264",
+        "4773757991"
     },
     
     Prefix = "!"
